@@ -16,7 +16,7 @@ It is possible to write your own unique Regex patterns directly in the attribute
 ```
 
 ```js
-let regex = /^[a-zA-Z]{0,10}/;
+    let regex = /^[a-zA-Z]{0,10}/;
     //let regex = /^[A-Za-z]{2,10}$/;
     //let regex = /^[a-zA-Z]([0-9a-zA-Z]){2,10}$/;
     let str = name.value;
@@ -44,6 +44,20 @@ let regex = /^[a-zA-Z]{0,10}/;
         console.log('Your name is not valid');
         email.classList.add('is-invalid');
         validEmail = false;
+
+    }
+    let regex = /^[0-9]{10}$/;
+    let nums = number.value;
+    console.log(regex, nums);
+    if (regex.test(nums)) {
+        console.log('Your name is valid');
+        number.classList.remove('is-invalid');
+        validNumber = true;
+    }
+    else {
+        console.log('Your name is not valid');
+        number.classList.add('is-invalid');
+        validNumber = false;
 
     }
 ```
