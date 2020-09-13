@@ -32,6 +32,20 @@ let regex = /^[a-zA-Z]{0,10}/;
         validName = false;
 
     }
+    let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+    let str = email.value;
+    console.log(regex, str);
+    if (regex.test(str)) {
+        console.log('Your name is valid');
+        email.classList.remove('is-invalid');
+        validEmail = true;
+    }
+    else {
+        console.log('Your name is not valid');
+        email.classList.add('is-invalid');
+        validEmail = false;
+
+    }
 ```
 
 
