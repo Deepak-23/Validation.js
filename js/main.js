@@ -36,12 +36,12 @@ email.addEventListener('blur', () => {
     let str = email.value;
     console.log(regex, str);
     if (regex.test(str)) {
-        console.log('Your name is valid');
+        console.log('Your email is valid');
         email.classList.remove('is-invalid');
         validEmail = true;
     }
     else {
-        console.log('Your name is not valid');
+        console.log('Your email is not valid');
         email.classList.add('is-invalid');
         validEmail = false;
 
@@ -53,12 +53,12 @@ number.addEventListener('blur', () => {
     let nums = number.value;
     console.log(regex, nums);
     if (regex.test(nums)) {
-        console.log('Your name is valid');
+        console.log('Your number is valid');
         number.classList.remove('is-invalid');
         validNumber = true;
     }
     else {
-        console.log('Your name is not valid');
+        console.log('Your number is not valid');
         number.classList.add('is-invalid');
         validNumber = false;
 
