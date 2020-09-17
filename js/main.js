@@ -13,7 +13,6 @@ let validNumber = false;
 name.addEventListener('blur', () => {
     console.log("name is blured");
     let regex = /^[a-zA-Z]{0,10}/;
-    //let regex = /^[A-Za-z]{2,10}$/;
     //let regex = /^[a-zA-Z]([0-9a-zA-Z]){2,10}$/;
     let str = name.value;
     console.log(regex, str);
